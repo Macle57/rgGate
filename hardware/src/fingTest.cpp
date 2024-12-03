@@ -23,6 +23,10 @@
 
 Adafruit_Fingerprint finger = Adafruit_Fingerprint(&Serial);
 
+uint8_t getFingerprintID();
+int getFingerprintIDez();
+
+
 void setup()
 {
 //   Serial.begin(9600);
