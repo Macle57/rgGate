@@ -35,19 +35,19 @@ void setup()
 //   Serial.println("\n\nAdafruit finger detect test");
 
     pinMode(ledPin, OUTPUT);
-    digitalWrite(ledPin, HIGH); //Off State
+    digitalWrite(ledPin, LOW); //Off State
 
   // set the data rate for the sensor serial port
   finger.begin(57600);
   delay(5);
   if (finger.verifyPassword()) {
     // Serial.println("Found fingerprint sensor!");
-    digitalWrite(ledPin, LOW); //On State
+    digitalWrite(ledPin, HIGH); //On State
 
   } else {
     // Serial.println("Did not find fingerprint sensor :(");
     while (1) { delay(1); }
-    digitalWrite(ledPin, HIGH); //Off State
+    digitalWrite(ledPin, LOW); //Off State
   }
 
 //   Serial.println(F("Reading sensor parameters"));

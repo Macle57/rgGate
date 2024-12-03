@@ -4,13 +4,7 @@
 // #include <ESPAsyncWebServer.h>
 // #include <Adafruit_Fingerprint.h>
 
-// #if (defined(__AVR__) || defined(ESP8266)) && !defined(__AVR_ATmega2560__)
-// #else
-// // On Leonardo/M0/etc, others with hardware serial, use hardware serial!
-// // #0 is green wire, #1 is white
-// #define mySerial Serial
 
-// #endif
 
 
 // Adafruit_Fingerprint finger = Adafruit_Fingerprint(&Serial);
